@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>_301379036_chen_lab3</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.aspnetcore.identity.entityframeworkcore" Version="8.0.23" />
+    <PackageReference Include="microsoft.aspnetcore.identity.ui" Version="8.0.23" />
+    <PackageReference Include="microsoft.entityframeworkcore" Version="8.0.23" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="8.0.23" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="8.0.23">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.23" />
+  </ItemGroup>
+
+</Project>

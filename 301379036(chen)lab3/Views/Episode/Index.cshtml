@@ -1,0 +1,87 @@
+﻿@model IEnumerable<_301379036_chen_lab3.Models.EpisodeModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PodcastId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlayCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AudioFileURL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfViews)
+            </th>
+            <th>
+                <a asp-action="ByPopular">
+                    View Popular Episodes
+                </a>
+            </th>
+        </tr>
+        <form asp-action="Index" method="get">
+            <div>
+                <label>Topic:</label>
+                <input type="text" name="searchTopic" />
+
+                <label>Host:</label>
+                <input type="text" name="searchHost" />
+
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PodcastId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlayCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AudioFileURL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfViews)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EpisodeId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EpisodeId">Details</a> |
+                <a asp-action="Watch" asp-route-id="@item.EpisodeId">Watch</a> |
+                <a asp-action="Delete" asp-route-id="@item.EpisodeId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
