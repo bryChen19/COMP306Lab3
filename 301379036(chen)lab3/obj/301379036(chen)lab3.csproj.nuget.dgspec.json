@@ -54,6 +54,14 @@
               "target": "Package",
               "version": "[8.0.23, )"
             },
+            "awssdk.extensions.netcore.setup": {
+              "target": "Package",
+              "version": "[4.0.100.4, )"
+            },
+            "awssdk.s3": {
+              "target": "Package",
+              "version": "[4.0.101.1, )"
+            },
             "microsoft.aspnetcore.identity.entityframeworkcore": {
               "target": "Package",
               "version": "[8.0.23, )"

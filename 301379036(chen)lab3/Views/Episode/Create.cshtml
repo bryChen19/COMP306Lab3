@@ -4,13 +4,13 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Create Episodes</h1>
 
 <h4>EpisodeModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="PodcastId" class="control-label"></label>
@@ -28,24 +28,9 @@
                 <span asp-validation-for="ReleaseDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Duration" class="control-label"></label>
-                <input asp-for="Duration" class="form-control" />
-                <span asp-validation-for="Duration" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PlayCount" class="control-label"></label>
-                <input asp-for="PlayCount" class="form-control" />
-                <span asp-validation-for="PlayCount" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="AudioFileURL" class="control-label"></label>
-                <input asp-for="AudioFileURL" class="form-control" />
+                <input type="file" name="audioFile" />
                 <span asp-validation-for="AudioFileURL" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NumberOfViews" class="control-label"></label>
-                <input asp-for="NumberOfViews" class="form-control" />
-                <span asp-validation-for="NumberOfViews" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -55,6 +40,6 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to Episodes</a>
 </div>
 

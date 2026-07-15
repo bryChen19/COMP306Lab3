@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="awssdk.extensions.netcore.setup" Version="4.0.100.4" />
+    <PackageReference Include="awssdk.s3" Version="4.0.101.1" />
     <PackageReference Include="microsoft.aspnetcore.identity.entityframeworkcore" Version="8.0.23" />
     <PackageReference Include="microsoft.aspnetcore.identity.ui" Version="8.0.23" />
     <PackageReference Include="microsoft.entityframeworkcore" Version="8.0.23" />

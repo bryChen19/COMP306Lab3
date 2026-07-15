@@ -7,16 +7,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using _301379036_chen_lab3.Data;
 using _301379036_chen_lab3.Models;
+using _301379036_chen_lab3.Services;
 
 namespace _301379036_chen_lab3.Controllers
 {
     public class EpisodeController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly S3Service _s3Service;
 
-        public EpisodeController(ApplicationDbContext context)
+        public EpisodeController(ApplicationDbContext context, S3Service s3service)
         {
             _context = context;
+            _s3Service = s3service;
         }
 
         // GET: Episode
@@ -68,10 +71,18 @@ namespace _301379036_chen_lab3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EpisodeId,PodcastId,Title,ReleaseDate,Duration,PlayCount,AudioFileURL,NumberOfViews,Topic,Host")] EpisodeModel episodeModel)
+        public async Task<IActionResult> Create(EpisodeModel episodeModel, IFormFile audioFile)
         {
             if (ModelState.IsValid)
             {
+                episodeModel.PlayCount = 0;
+                episodeModel.NumberOfViews = 0;
+                if (audioFile != null && audioFile.Length > 0)
+                {
+                    // Upload the audio file to S3 and get the URL
+                    var audioFileUrl = await _s3Service.UploadFileAsync(audioFile);
+                    episodeModel.AudioFileURL = audioFileUrl;
+                }
                 _context.Add(episodeModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

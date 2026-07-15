@@ -3,92 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\podcast\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\podcast\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\controllers\\podcastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\controllers\\podcastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\models\\podcastmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\models\\podcastmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\episode\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\episode\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\controllers\\episodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\controllers\\episodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\models\\episodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\models\\episodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\services\\s3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\services\\s3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\models\\subscriptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\models\\subscriptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\models\\commentsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\models\\commentsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\episode\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\episode\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\models\\episodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\models\\episodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\301379036(chen)lab3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\301379036(chen)lab3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\home\\listener.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\home\\listener.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\migrations\\20260713234131_addtopicandhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\migrations\\20260713234131_addtopicandhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\migrations\\20260713192045_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\migrations\\20260713192045_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,8 +42,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
+              "RelativeToolTip": "301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-15T14:12:58.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PodcastController.cs",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\PodcastController.cs",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Controllers\\PodcastController.cs",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\PodcastController.cs",
+              "RelativeToolTip": "301379036(chen)lab3\\Controllers\\PodcastController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T14:12:33.742Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -122,271 +92,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Index.cshtml",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Episode\\Index.cshtml",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Index.cshtml",
-              "RelativeToolTip": "301379036(chen)lab3\\Views\\Episode\\Index.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAwwCcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-14T03:37:49.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "301379036(chen)lab3\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-17T13:19:45.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SubscriptionController.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\SubscriptionController.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Controllers\\SubscriptionController.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\SubscriptionController.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Controllers\\SubscriptionController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T23:20:40.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PodcastModel.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\PodcastModel.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Models\\PodcastModel.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\PodcastModel.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Models\\PodcastModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:05:46.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PodcastController.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\PodcastController.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Controllers\\PodcastController.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\PodcastController.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Controllers\\PodcastController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwDwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T23:19:34.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA9wCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T13:19:37.501Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "301379036(chen)lab3\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAUwCgAAABzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-14T04:06:32.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EpisodeModel.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\EpisodeModel.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Models\\EpisodeModel.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\EpisodeModel.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Models\\EpisodeModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T23:29:31.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20260713234131_addtopicandhost.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Migrations\\20260713234131_addtopicandhost.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Migrations\\20260713234131_addtopicandhost.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Migrations\\20260713234131_addtopicandhost.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Migrations\\20260713234131_addtopicandhost.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T23:41:32.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EpisodeController.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\EpisodeController.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Controllers\\EpisodeController.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\EpisodeController.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Controllers\\EpisodeController.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAAAAL4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:28:27.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "20260713192045_initialcreate.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Migrations\\20260713192045_initialcreate.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Migrations\\20260713192045_initialcreate.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Migrations\\20260713192045_initialcreate.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Migrations\\20260713192045_initialcreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:20:45.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SubscriptionModel.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\SubscriptionModel.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Models\\SubscriptionModel.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\SubscriptionModel.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Models\\SubscriptionModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T19:06:42.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CommentsModel.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\CommentsModel.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Models\\CommentsModel.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\CommentsModel.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Models\\CommentsModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T18:16:16.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\UserModel.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Models\\UserModel.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\UserModel.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Models\\UserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T15:59:37.806Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\appsettings.json",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\appsettings.json",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\appsettings.json",
-              "RelativeToolTip": "301379036(chen)lab3\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-13T15:56:07.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T23:51:45.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "301379036(chen)lab3.csproj",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\301379036(chen)lab3.csproj",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\301379036(chen)lab3.csproj",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\301379036(chen)lab3.csproj",
-              "RelativeToolTip": "301379036(chen)lab3\\301379036(chen)lab3.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-13T15:05:47.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T14:55:37.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Program.cs",
               "RelativeDocumentMoniker": "301379036(chen)lab3\\Program.cs",
               "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Program.cs",
               "RelativeToolTip": "301379036(chen)lab3\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T14:19:48.033Z"
+              "WhenOpened": "2026-07-15T13:27:56.585Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Properties\\launchSettings.json",
-              "RelativeToolTip": "301379036(chen)lab3\\Properties\\launchSettings.json",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-13T03:19:11.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Listener.cshtml",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Home\\Listener.cshtml",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Home\\Listener.cshtml",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Home\\Listener.cshtml",
-              "RelativeToolTip": "301379036(chen)lab3\\Views\\Home\\Listener.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
+              "RelativeToolTip": "301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-17T13:49:11.545Z"
+              "WhenOpened": "2026-07-15T13:18:53.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Home\\Login.cshtml",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "301379036(chen)lab3\\Views\\Home\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-17T13:36:34.365Z"
+              "DocumentIndex": 2,
+              "Title": "EpisodeController.cs",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\EpisodeController.cs",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Controllers\\EpisodeController.cs",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\EpisodeController.cs",
+              "RelativeToolTip": "301379036(chen)lab3\\Controllers\\EpisodeController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwEYAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T13:13:32.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "S3Service.cs",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Services\\S3Service.cs",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Services\\S3Service.cs",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Services\\S3Service.cs",
+              "RelativeToolTip": "301379036(chen)lab3\\Services\\S3Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T13:13:03.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EpisodeModel.cs",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\EpisodeModel.cs",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Models\\EpisodeModel.cs",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\EpisodeModel.cs",
+              "RelativeToolTip": "301379036(chen)lab3\\Models\\EpisodeModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T23:29:31.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "301379036(chen)lab3.csproj",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\301379036(chen)lab3.csproj",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\301379036(chen)lab3.csproj",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\301379036(chen)lab3.csproj",
+              "RelativeToolTip": "301379036(chen)lab3\\301379036(chen)lab3.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-13T15:05:47.21Z",
+              "EditorCaption": ""
             }
           ]
         }
