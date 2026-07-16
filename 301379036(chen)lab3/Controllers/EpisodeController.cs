@@ -61,8 +61,10 @@ namespace _301379036_chen_lab3.Controllers
         }
 
         // GET: Episode/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            ViewBag.PodcastId = new SelectList(
+                await _context.Podcasts.ToListAsync(), "PodcastId", "Title");
             return View();
         }
 
@@ -77,7 +79,7 @@ namespace _301379036_chen_lab3.Controllers
             {
                 episodeModel.PlayCount = 0;
                 episodeModel.NumberOfViews = 0;
-                if (audioFile != null && audioFile.Length > 0)
+                if (audioFile != null)
                 {
                     // Upload the audio file to S3 and get the URL
                     var audioFileUrl = await _s3Service.UploadFileAsync(audioFile);
@@ -87,6 +89,9 @@ namespace _301379036_chen_lab3.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewBag.PodcastId = new SelectList(
+                await _context.Podcasts.ToListAsync(), "PodcastId", "Title", episodeModel.PodcastId);
             return View(episodeModel);
         }
 
@@ -103,6 +108,10 @@ namespace _301379036_chen_lab3.Controllers
             {
                 return NotFound();
             }
+            
+            ViewBag.PodcastId = new SelectList(
+                await _context.Podcasts.ToListAsync(), "PodcastId", "Title", episodeModel.PodcastId);
+
             return View(episodeModel);
         }
 

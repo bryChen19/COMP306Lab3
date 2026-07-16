@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\podcast\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\podcast\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\episode\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\episode\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\controllers\\podcastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\controllers\\podcastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\episode\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\episode\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\controllers\\episodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\controllers\\episodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\services\\s3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\services\\s3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\controllers\\podcastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\controllers\\podcastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\episode\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\episode\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\views\\podcast\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\views\\podcast\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\services\\s3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|solutionrelative:301379036(chen)lab3\\services\\s3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D81DF497-1F7F-4067-8DD5-03DD935394B7}|301379036(chen)lab3\\301379036(chen)lab3.csproj|c:\\users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,34 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
-              "RelativeToolTip": "301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-15T14:12:58.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PodcastController.cs",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\PodcastController.cs",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Controllers\\PodcastController.cs",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\PodcastController.cs",
-              "RelativeToolTip": "301379036(chen)lab3\\Controllers\\PodcastController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T14:12:33.742Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -92,7 +70,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Edit.cshtml",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Episode\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Edit.cshtml",
+              "RelativeToolTip": "301379036(chen)lab3\\Views\\Episode\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-16T13:53:00.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
+              "RelativeToolTip": "301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-15T13:18:53.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
+              "RelativeToolTip": "301379036(chen)lab3\\Views\\Podcast\\Index.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwCMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-15T14:12:58.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PodcastController.cs",
+              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\PodcastController.cs",
+              "RelativeDocumentMoniker": "301379036(chen)lab3\\Controllers\\PodcastController.cs",
+              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\PodcastController.cs",
+              "RelativeToolTip": "301379036(chen)lab3\\Controllers\\PodcastController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwEkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T14:12:33.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Program.cs",
               "RelativeDocumentMoniker": "301379036(chen)lab3\\Program.cs",
@@ -100,21 +130,7 @@
               "RelativeToolTip": "301379036(chen)lab3\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T13:27:56.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
-              "RelativeDocumentMoniker": "301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
-              "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
-              "RelativeToolTip": "301379036(chen)lab3\\Views\\Episode\\Create.cshtml",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-15T13:18:53.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-15T13:27:56.585Z"
             },
             {
               "$type": "Document",
@@ -124,14 +140,14 @@
               "RelativeDocumentMoniker": "301379036(chen)lab3\\Controllers\\EpisodeController.cs",
               "ToolTip": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Controllers\\EpisodeController.cs",
               "RelativeToolTip": "301379036(chen)lab3\\Controllers\\EpisodeController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwEYAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwHAAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-15T13:13:32.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "S3Service.cs",
               "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Services\\S3Service.cs",
               "RelativeDocumentMoniker": "301379036(chen)lab3\\Services\\S3Service.cs",
@@ -139,12 +155,11 @@
               "RelativeToolTip": "301379036(chen)lab3\\Services\\S3Service.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T13:13:03.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-15T13:13:03.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EpisodeModel.cs",
               "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\Models\\EpisodeModel.cs",
               "RelativeDocumentMoniker": "301379036(chen)lab3\\Models\\EpisodeModel.cs",
@@ -152,12 +167,11 @@
               "RelativeToolTip": "301379036(chen)lab3\\Models\\EpisodeModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T23:29:31.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T23:29:31.611Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "301379036(chen)lab3.csproj",
               "DocumentMoniker": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\301379036(chen)lab3.csproj",
               "RelativeDocumentMoniker": "301379036(chen)lab3\\301379036(chen)lab3.csproj",
@@ -165,8 +179,7 @@
               "RelativeToolTip": "301379036(chen)lab3\\301379036(chen)lab3.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-13T15:05:47.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-13T15:05:47.21Z"
             }
           ]
         }
