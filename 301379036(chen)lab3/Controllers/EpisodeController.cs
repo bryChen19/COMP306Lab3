@@ -64,7 +64,7 @@ namespace _301379036_chen_lab3.Controllers
         public async Task<IActionResult> Create()
         {
             ViewBag.PodcastId = new SelectList(
-                await _context.Podcasts.ToListAsync(), "PodcastId", "Title");
+                await _context.Podcasts.ToListAsync(), "PodcastID", "Title");
             return View();
         }
 
@@ -109,8 +109,8 @@ namespace _301379036_chen_lab3.Controllers
                 return NotFound();
             }
             
-            ViewBag.PodcastId = new SelectList(
-                await _context.Podcasts.ToListAsync(), "PodcastId", "Title", episodeModel.PodcastId);
+            ViewBag.PodcastID = new SelectList(
+                await _context.Podcasts.ToListAsync(), "PodcastID", "Title", episodeModel.PodcastId);
 
             return View(episodeModel);
         }

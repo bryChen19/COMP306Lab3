@@ -264,3 +264,4 @@ C:\Users\bran_\source\repos\301379036(chen)lab3\301379036(chen)lab3\obj\Debug\ne
 C:\Users\bran_\source\repos\301379036(chen)lab3\301379036(chen)lab3\bin\Debug\net8.0\AWSSDK.Core.dll
 C:\Users\bran_\source\repos\301379036(chen)lab3\301379036(chen)lab3\bin\Debug\net8.0\AWSSDK.Extensions.NETCore.Setup.dll
 C:\Users\bran_\source\repos\301379036(chen)lab3\301379036(chen)lab3\bin\Debug\net8.0\AWSSDK.S3.dll
+C:\Users\bran_\source\repos\301379036(chen)lab3\301379036(chen)lab3\bin\Debug\net8.0\AWSSDK.DynamoDBv2.dll

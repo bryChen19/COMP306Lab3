@@ -5,8 +5,22 @@
 <div class="text-center">
     <h1 class="display-4">Podcast Management</h1>
     <p class="lead">Manage podcasts, episodes, subscriptions, and listener interactions</p>
-	<a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Login">Login</a>
-    <a class="btn btn-secondary" asp-area="Identity" asp-page="/Account/Register">Register</a>
+
+    @if (User.Identity != null && User.Identity.IsAuthenticated)
+    {
+        <p>
+            Welcome, <strong>@User.Identity.Name</strong>
+        </p>
+
+	    <a class="btn btn-primary" asp-controller="Episode" asp-action="Index">Browse Episodes</a>
+        <a class="btn btn-secondary" asp-controller="Podcast" asp-action="Index">Browse Podcasts</a>
+    }
+    else
+    {
+        <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <a class="btn btn-secondary" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    }
+
 </div>
 
 <div class="container mt-5">

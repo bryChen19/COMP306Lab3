@@ -8,9 +8,9 @@ namespace _301379036_chen_lab3.Services
         private readonly IAmazonS3 _s3Client;
         private readonly string _bucketName = "comp306-lab3-bryan";
 
-        public S3Service(IAmazonS3 s3Client)
+        public S3Service()
         {
-            _s3Client = s3Client;
+            _s3Client = Helper.S3Client;
         }
 
         public async Task<string> UploadFileAsync(IFormFile file)

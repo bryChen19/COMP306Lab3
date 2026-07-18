@@ -25,5 +25,6 @@
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\bran_\.nuget\packages\microsoft.entityframeworkcore.tools\8.0.23</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\bran_\.nuget\packages\awssdk.core\4.0.100.5</PkgAWSSDK_Core>
     <PkgAWSSDK_S3 Condition=" '$(PkgAWSSDK_S3)' == '' ">C:\Users\bran_\.nuget\packages\awssdk.s3\4.0.101.1</PkgAWSSDK_S3>
+    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\bran_\.nuget\packages\awssdk.dynamodbv2\4.0.101.2</PkgAWSSDK_DynamoDBv2>
   </PropertyGroup>
 </Project>

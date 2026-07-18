@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iW4W++DrZfU=",
+  "dgSpecHash": "fa7KHRBLpOM=",
   "success": true,
   "projectFilePath": "C:\\Users\\bran_\\source\\repos\\301379036(chen)lab3\\301379036(chen)lab3\\301379036(chen)lab3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bran_\\.nuget\\packages\\awssdk.core\\4.0.100.5\\awssdk.core.4.0.100.5.nupkg.sha512",
+    "C:\\Users\\bran_\\.nuget\\packages\\awssdk.dynamodbv2\\4.0.101.2\\awssdk.dynamodbv2.4.0.101.2.nupkg.sha512",
     "C:\\Users\\bran_\\.nuget\\packages\\awssdk.extensions.netcore.setup\\4.0.100.4\\awssdk.extensions.netcore.setup.4.0.100.4.nupkg.sha512",
     "C:\\Users\\bran_\\.nuget\\packages\\awssdk.s3\\4.0.101.1\\awssdk.s3.4.0.101.1.nupkg.sha512",
     "C:\\Users\\bran_\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
