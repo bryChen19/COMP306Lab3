@@ -14,6 +14,12 @@
 
 	    <a class="btn btn-primary" asp-controller="Episode" asp-action="Index">Browse Episodes</a>
         <a class="btn btn-secondary" asp-controller="Podcast" asp-action="Index">Browse Podcasts</a>
+
+        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home")" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-danger">
+                Logout
+            </button> 
+        </form>
     }
     else
     {
