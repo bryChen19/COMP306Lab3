@@ -65,9 +65,29 @@ namespace _301379036_chen_lab3.Controllers
         [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Create()
         {
-            ViewBag.PodcastID = new SelectList(
+            
+                var podcasts = await _context.Podcasts.ToListAsync();
+
+                if (podcasts == null)
+                {
+                    throw new Exception("Podcasts is null");
+                }
+
+                if (podcasts.Count == 0)
+                {
+                    throw new Exception("No podcasts exist in the database.");
+                }
+
+                ViewBag.PodcastID = new SelectList(
+                    podcasts,
+                    nameof(PodcastModel.PodcastID),
+                    nameof(PodcastModel.Title));
+
+                return View();
+            
+            /*ViewBag.PodcastID = new SelectList(
                 await _context.Podcasts.ToListAsync(), "PodcastID", "Title");
-            return View();
+            return View();*/
         }
 
         // POST: Episode/Create
@@ -94,7 +114,7 @@ namespace _301379036_chen_lab3.Controllers
             }
 
             ViewBag.PodcastID = new SelectList(
-                await _context.Podcasts.ToListAsync(), "PodcastId", "Title", episodeModel.PodcastId);
+                await _context.Podcasts.ToListAsync(), "PodcastID", "Title", episodeModel.PodcastID);
             return View(episodeModel);
         }
 
@@ -114,7 +134,7 @@ namespace _301379036_chen_lab3.Controllers
             }
             
             ViewBag.PodcastID = new SelectList(
-                await _context.Podcasts.ToListAsync(), "PodcastID", "Title", episodeModel.PodcastId);
+                await _context.Podcasts.ToListAsync(), "PodcastID", "Title", episodeModel.PodcastID);
 
             return View(episodeModel);
         }
@@ -125,7 +145,7 @@ namespace _301379036_chen_lab3.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Podcaster,Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("EpisodeId,PodcastId,Title,ReleaseDate,Duration,PlayCount,AudioFileURL,NumberOfViews,Topic,Host")] EpisodeModel episodeModel)
+        public async Task<IActionResult> Edit(int id, [Bind("EpisodeId,PodcastID,Title,ReleaseDate,Duration,PlayCount,AudioFileURL,NumberOfViews,Topic,Host")] EpisodeModel episodeModel)
         {
             if (id != episodeModel.EpisodeId)
             {

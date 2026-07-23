@@ -13,13 +13,13 @@
         <form asp-action="Create" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="PodcastId" class="control-label">Podcast</label>
-                <select asp-for="PodcastId" class="form-control" asp-items="ViewBag.PodcastID">
+                <label asp-for="PodcastID" class="control-label">Podcast</label>
+                <select asp-for="PodcastID" class="form-control" asp-items="ViewBag.PodcastID">
                     <option value="">
                         --Select a Podcast--
                     </option>
                 </select>
-                <span asp-validation-for="PodcastId" class="text-danger"></span>
+                <span asp-validation-for="PodcastID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
