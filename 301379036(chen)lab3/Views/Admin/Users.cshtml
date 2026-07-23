@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model IEnumerable<_301379036_chen_lab3.Models.UserRoleViewModel>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>User Management</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Email</td>
+                <td>@user.Role</td>
+                <td>
+                    @if (user.Role == "User")
+                    {
+                        <form asp-action="PromoteToAdmin" method="post" style="display:inline;">
+                            <input type="hidden" name="email" value="@user.Email" />
+                            <button type="submit" class="btn btn-primary">Promote to Admin</button>
+                        </form>
+                    }
+                    else if (user.Role == "Admin")
+                    {
+                        <form asp-action="DemoteToUser" method="post" style="display:inline;">
+                            <input type="hidden" name="email" value="@user.Email" />
+                            <button type="submit" class="btn btn-warning">Demote to User</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+    </table>

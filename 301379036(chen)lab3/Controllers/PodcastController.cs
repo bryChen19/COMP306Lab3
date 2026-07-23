@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using _301379036_chen_lab3.Data;
 using _301379036_chen_lab3.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace _301379036_chen_lab3.Controllers
 {
@@ -44,6 +45,7 @@ namespace _301379036_chen_lab3.Controllers
         }
 
         // GET: Podcast/Create
+        [Authorize(Roles = "Podcaster,Admin")]
         public IActionResult Create()
         {
             return View();
@@ -54,6 +56,7 @@ namespace _301379036_chen_lab3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Create([Bind("PodcastID,Title,Description,CreatorID")] PodcastModel podcastModel)
         {
             if (ModelState.IsValid)
@@ -67,6 +70,7 @@ namespace _301379036_chen_lab3.Controllers
         }
 
         // GET: Podcast/Edit/5
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,6 +91,7 @@ namespace _301379036_chen_lab3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("PodcastID,Title,Description,CreatorID,CreatedDate")] PodcastModel podcastModel)
         {
             if (id != podcastModel.PodcastID)
@@ -118,6 +123,7 @@ namespace _301379036_chen_lab3.Controllers
         }
 
         // GET: Podcast/Delete/5
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,6 +142,7 @@ namespace _301379036_chen_lab3.Controllers
         }
 
         // POST: Podcast/Delete/5
+        [Authorize(Roles = "Podcaster,Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

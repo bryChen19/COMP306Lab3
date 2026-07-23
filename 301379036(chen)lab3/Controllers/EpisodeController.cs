@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using _301379036_chen_lab3.Data;
+using _301379036_chen_lab3.Models;
+using _301379036_chen_lab3.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using _301379036_chen_lab3.Data;
-using _301379036_chen_lab3.Models;
-using _301379036_chen_lab3.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace _301379036_chen_lab3.Controllers
 {
@@ -61,9 +62,10 @@ namespace _301379036_chen_lab3.Controllers
         }
 
         // GET: Episode/Create
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Create()
         {
-            ViewBag.PodcastId = new SelectList(
+            ViewBag.PodcastID = new SelectList(
                 await _context.Podcasts.ToListAsync(), "PodcastID", "Title");
             return View();
         }
@@ -73,6 +75,7 @@ namespace _301379036_chen_lab3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Create(EpisodeModel episodeModel, IFormFile audioFile)
         {
             if (ModelState.IsValid)
@@ -90,12 +93,13 @@ namespace _301379036_chen_lab3.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewBag.PodcastId = new SelectList(
+            ViewBag.PodcastID = new SelectList(
                 await _context.Podcasts.ToListAsync(), "PodcastId", "Title", episodeModel.PodcastId);
             return View(episodeModel);
         }
 
         // GET: Episode/Edit/5
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -120,6 +124,7 @@ namespace _301379036_chen_lab3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("EpisodeId,PodcastId,Title,ReleaseDate,Duration,PlayCount,AudioFileURL,NumberOfViews,Topic,Host")] EpisodeModel episodeModel)
         {
             if (id != episodeModel.EpisodeId)
@@ -151,6 +156,7 @@ namespace _301379036_chen_lab3.Controllers
         }
 
         // GET: Episode/Delete/5
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -171,6 +177,7 @@ namespace _301379036_chen_lab3.Controllers
         // POST: Episode/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var episodeModel = await _context.Episodes.FindAsync(id);
