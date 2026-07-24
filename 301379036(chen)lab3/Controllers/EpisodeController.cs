@@ -98,23 +98,33 @@ namespace _301379036_chen_lab3.Controllers
         [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Create(EpisodeModel episodeModel, IFormFile audioFile)
         {
+            if (audioFile == null)
+            {
+                ModelState.AddModelError("AudioFileURL","Please upload an audio file.");
+            }
+            foreach (var error in ModelState)
+            {
+                foreach (var e in error.Value.Errors)
+                {
+                    Console.WriteLine($"{error.Key}: {e.ErrorMessage}");
+                }
+            }
             if (ModelState.IsValid)
             {
                 episodeModel.PlayCount = 0;
                 episodeModel.NumberOfViews = 0;
-                if (audioFile != null)
-                {
-                    // Upload the audio file to S3 and get the URL
-                    var audioFileUrl = await _s3Service.UploadFileAsync(audioFile);
-                    episodeModel.AudioFileURL = audioFileUrl;
-                }
+                episodeModel.ReleaseDate = DateTime.Now;
+
+                episodeModel.AudioFileURL =
+                    await _s3Service.UploadFileAsync(audioFile);
+
                 _context.Add(episodeModel);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
-
-            ViewBag.PodcastID = new SelectList(
-                await _context.Podcasts.ToListAsync(), "PodcastID", "Title", episodeModel.PodcastID);
+            // reload dropdown if validation fails
+            ViewBag.PodcastID = new SelectList(await _context.Podcasts.ToListAsync(),"PodcastID","Title",episodeModel.PodcastID);
             return View(episodeModel);
         }
 
@@ -203,10 +213,14 @@ namespace _301379036_chen_lab3.Controllers
             var episodeModel = await _context.Episodes.FindAsync(id);
             if (episodeModel != null)
             {
+                if (!string.IsNullOrEmpty(episodeModel.AudioFileURL))
+                {
+                    await _s3Service.DeleteFileAsync(
+                        episodeModel.AudioFileURL);
+                }
                 _context.Episodes.Remove(episodeModel);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

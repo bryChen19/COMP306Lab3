@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "AWSSDK.Core/4.0.100.5": {
+      "AWSSDK.Core/4.0.100.8": {
         "type": "package",
         "compile": {
           "lib/net8.0/AWSSDK.Core.dll": {
@@ -31,10 +31,10 @@
           }
         }
       },
-      "AWSSDK.Extensions.NETCore.Setup/4.0.100.4": {
+      "AWSSDK.Extensions.NETCore.Setup/4.0.100.6": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "4.0.100.5",
+          "AWSSDK.Core": "4.0.100.8",
           "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0"
@@ -2999,15 +2999,15 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/4.0.100.5": {
-      "sha512": "OYkCEqfNDh6uDlsCF+pBCOi9LvaEg9m2iU5xtbMci3yW8SpCIPOijiqB5OINIhdDvrQAltFd0x4BeYfF7GJVSw==",
+    "AWSSDK.Core/4.0.100.8": {
+      "sha512": "xnuBVLQBmYQXsDZJ9mq2UDSFZm3xgO5oUb4/UR8p0UO7tG6heDhsLLI1NzZhIVAKyfW0tXg9hn9a/ek018TOVw==",
       "type": "package",
-      "path": "awssdk.core/4.0.100.5",
+      "path": "awssdk.core/4.0.100.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.4.0.100.5.nupkg.sha512",
+        "awssdk.core.4.0.100.8.nupkg.sha512",
         "awssdk.core.nuspec",
         "images/AWSLogo.png",
         "lib/net472/AWSSDK.Core.dll",
@@ -3046,15 +3046,15 @@
         "tools/uninstall.ps1"
       ]
     },
-    "AWSSDK.Extensions.NETCore.Setup/4.0.100.4": {
-      "sha512": "+89b9ZJt6cNJIrFhakkTup88QENh/NFaBzlVyFL9/JmQpu4gCA9mFozDWpDPlVfsfQ5V6QYjLnyEjH2bEi1jvw==",
+    "AWSSDK.Extensions.NETCore.Setup/4.0.100.6": {
+      "sha512": "7QIx6PDpkqPkuA4ukaUbz8teu87pPXOYszSchCAB0n1NrB5/5/gitugLUXv/LGUuG7OGueHS/qOv7VoXOVpTSg==",
       "type": "package",
-      "path": "awssdk.extensions.netcore.setup/4.0.100.4",
+      "path": "awssdk.extensions.netcore.setup/4.0.100.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "ConfigurationSchema.json",
-        "awssdk.extensions.netcore.setup.4.0.100.4.nupkg.sha512",
+        "awssdk.extensions.netcore.setup.4.0.100.6.nupkg.sha512",
         "awssdk.extensions.netcore.setup.nuspec",
         "buildTransitive/net8.0/AWSSDK.Extensions.NETCore.Setup.targets",
         "buildTransitive/netcoreapp3.1/AWSSDK.Extensions.NETCore.Setup.targets",
@@ -8229,7 +8229,7 @@
       "AWSSDK.DynamoDBv2 >= 4.0.101.2",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.23",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.23",
-      "awssdk.extensions.netcore.setup >= 4.0.100.4",
+      "awssdk.extensions.netcore.setup >= 4.0.100.6",
       "awssdk.s3 >= 4.0.101.1",
       "microsoft.aspnetcore.identity.entityframeworkcore >= 8.0.23",
       "microsoft.aspnetcore.identity.ui >= 8.0.23",
@@ -8302,7 +8302,7 @@
           },
           "awssdk.extensions.netcore.setup": {
             "target": "Package",
-            "version": "[4.0.100.4, )"
+            "version": "[4.0.100.6, )"
           },
           "awssdk.s3": {
             "target": "Package",

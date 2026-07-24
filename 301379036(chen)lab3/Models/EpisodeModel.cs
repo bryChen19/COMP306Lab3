@@ -11,7 +11,7 @@ namespace _301379036_chen_lab3.Models
         public DateTime ReleaseDate { get; set; }
         public int Duration { get; set; }
         public int PlayCount { get; set; }
-        public string AudioFileURL { get; set; }
+        public string? AudioFileURL { get; set; }
         public int NumberOfViews { get; set; }
         public string Topic { get; set; }
         public string Host { get; set; }

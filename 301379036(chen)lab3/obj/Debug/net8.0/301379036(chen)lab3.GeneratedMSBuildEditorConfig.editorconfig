@@ -56,6 +56,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bran_/source/repos/301379036(chen)lab3/301379036(chen)lab3/Views/CommentsDemo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNEZW1vXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bran_/source/repos/301379036(chen)lab3/301379036(chen)lab3/Views/CommentsDemo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNEZW1vXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bran_/source/repos/301379036(chen)lab3/301379036(chen)lab3/Views/Episode/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBpc29kZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -118,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/bran_/source/repos/301379036(chen)lab3/301379036(chen)lab3/Views/Podcast/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9kY2FzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bran_/source/repos/301379036(chen)lab3/301379036(chen)lab3/Views/S3Demo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUzNEZW1vXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bran_/source/repos/301379036(chen)lab3/301379036(chen)lab3/Views/Shared/Error.cshtml]

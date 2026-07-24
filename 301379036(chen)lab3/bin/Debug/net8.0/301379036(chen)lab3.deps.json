@@ -11,7 +11,7 @@
           "AWSSDK.DynamoDBv2": "4.0.101.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.23",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.23",
-          "AWSSDK.Extensions.NETCore.Setup": "4.0.100.4",
+          "AWSSDK.Extensions.NETCore.Setup": "4.0.100.6",
           "AWSSDK.S3": "4.0.101.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.23",
           "Microsoft.AspNetCore.Identity.UI": "8.0.23",
@@ -23,17 +23,17 @@
           "301379036(chen)lab3.dll": {}
         }
       },
-      "AWSSDK.Core/4.0.100.5": {
+      "AWSSDK.Core/4.0.100.8": {
         "runtime": {
           "lib/net8.0/AWSSDK.Core.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.100.5"
+            "fileVersion": "4.0.100.8"
           }
         }
       },
       "AWSSDK.DynamoDBv2/4.0.101.2": {
         "dependencies": {
-          "AWSSDK.Core": "4.0.100.5"
+          "AWSSDK.Core": "4.0.100.8"
         },
         "runtime": {
           "lib/net8.0/AWSSDK.DynamoDBv2.dll": {
@@ -42,9 +42,9 @@
           }
         }
       },
-      "AWSSDK.Extensions.NETCore.Setup/4.0.100.4": {
+      "AWSSDK.Extensions.NETCore.Setup/4.0.100.6": {
         "dependencies": {
-          "AWSSDK.Core": "4.0.100.5",
+          "AWSSDK.Core": "4.0.100.8",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
@@ -52,13 +52,13 @@
         "runtime": {
           "lib/net8.0/AWSSDK.Extensions.NETCore.Setup.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.100.4"
+            "fileVersion": "4.0.100.6"
           }
         }
       },
       "AWSSDK.S3/4.0.101.1": {
         "dependencies": {
-          "AWSSDK.Core": "4.0.100.5"
+          "AWSSDK.Core": "4.0.100.8"
         },
         "runtime": {
           "lib/net8.0/AWSSDK.S3.dll": {
@@ -2135,12 +2135,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/4.0.100.5": {
+    "AWSSDK.Core/4.0.100.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OYkCEqfNDh6uDlsCF+pBCOi9LvaEg9m2iU5xtbMci3yW8SpCIPOijiqB5OINIhdDvrQAltFd0x4BeYfF7GJVSw==",
-      "path": "awssdk.core/4.0.100.5",
-      "hashPath": "awssdk.core.4.0.100.5.nupkg.sha512"
+      "sha512": "sha512-xnuBVLQBmYQXsDZJ9mq2UDSFZm3xgO5oUb4/UR8p0UO7tG6heDhsLLI1NzZhIVAKyfW0tXg9hn9a/ek018TOVw==",
+      "path": "awssdk.core/4.0.100.8",
+      "hashPath": "awssdk.core.4.0.100.8.nupkg.sha512"
     },
     "AWSSDK.DynamoDBv2/4.0.101.2": {
       "type": "package",
@@ -2149,12 +2149,12 @@
       "path": "awssdk.dynamodbv2/4.0.101.2",
       "hashPath": "awssdk.dynamodbv2.4.0.101.2.nupkg.sha512"
     },
-    "AWSSDK.Extensions.NETCore.Setup/4.0.100.4": {
+    "AWSSDK.Extensions.NETCore.Setup/4.0.100.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+89b9ZJt6cNJIrFhakkTup88QENh/NFaBzlVyFL9/JmQpu4gCA9mFozDWpDPlVfsfQ5V6QYjLnyEjH2bEi1jvw==",
-      "path": "awssdk.extensions.netcore.setup/4.0.100.4",
-      "hashPath": "awssdk.extensions.netcore.setup.4.0.100.4.nupkg.sha512"
+      "sha512": "sha512-7QIx6PDpkqPkuA4ukaUbz8teu87pPXOYszSchCAB0n1NrB5/5/gitugLUXv/LGUuG7OGueHS/qOv7VoXOVpTSg==",
+      "path": "awssdk.extensions.netcore.setup/4.0.100.6",
+      "hashPath": "awssdk.extensions.netcore.setup.4.0.100.6.nupkg.sha512"
     },
     "AWSSDK.S3/4.0.101.1": {
       "type": "package",
