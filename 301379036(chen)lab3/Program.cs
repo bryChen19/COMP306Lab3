@@ -19,24 +19,16 @@ builder.Services.AddDefaultIdentity<IdentityUser>().AddRoles<IdentityRole>().Add
 
 builder.Services.AddAWSService<IAmazonS3>();
 builder.Services.AddAWSService<IAmazonDynamoDB>();
+builder.Services.AddScoped<ICommentService,CommentService>();
 builder.Services.AddScoped<S3Service>();
+builder.Services.AddScoped<IDynamoDBContext>(sp =>
+{
+    var client = sp.GetRequiredService<IAmazonDynamoDB>();
+    return new DynamoDBContext(client);
+});
 builder.Services.AddDefaultAWSOptions(
     builder.Configuration.GetAWSOptions()
 );
-builder.Services.AddScoped<IDynamoDBContext>(
-    serviceProvider =>
-    {
-        IAmazonDynamoDB client =
-            serviceProvider
-                .GetRequiredService<IAmazonDynamoDB>();
-
-        return new DynamoDBContext(client);
-    }
-);
-builder.Services.AddScoped<
-    ICommentService,
-    DynamoDbCommentService
->();
 
 var app = builder.Build();
 

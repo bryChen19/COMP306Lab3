@@ -6,6 +6,7 @@ namespace _301379036_chen_lab3.Models
     {
         [Key]
         public int EpisodeId { get; set; }
+        public PodcastModel? Podcast { get; set; }
         public int PodcastID { get; set; }
         public string Title { get; set; }
         public DateTime ReleaseDate { get; set; }

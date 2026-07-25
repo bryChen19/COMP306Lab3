@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using _301379036_chen_lab3.Models;
+﻿using _301379036_chen_lab3.Models;
 using _301379036_chen_lab3.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace _301379036_chen_lab3.Controllers
 {
+    [Authorize]
     public sealed class CommentsDemoController : Controller
     {
         private readonly ICommentService _commentService;
@@ -20,9 +23,9 @@ namespace _301379036_chen_lab3.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(
             string episodeId = "1",
-            string currentUserId = "1",
             CancellationToken cancellationToken = default)
         {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             IReadOnlyList<CommentsModel> comments =
                 await _commentService
                     .GetCommentsByEpisodeAsync(
@@ -40,49 +43,43 @@ namespace _301379036_chen_lab3.Controllers
         public async Task<IActionResult> Add(
             string episodeId,
             string podcastID,
-            string userId,
             string text,
             CancellationToken cancellationToken)
         {
+            string? userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (userId == null)
+                return Challenge();
+
             try
             {
-                CommentsModel comment =
-                    await _commentService.AddCommentAsync(
-                        episodeId,
-                        podcastID,
-                        userId,
-                        text,
-                        cancellationToken);
+                await _commentService.AddCommentAsync(
+                    episodeId,
+                    podcastID,
+                    userId,
+                    text,
+                    cancellationToken);
 
-                TempData["SuccessMessage"] =
-                    $"Comment {comment.CommentId} was added successfully.";
+                TempData["SuccessMessage"] = "Comment added.";
             }
             catch (Exception ex)
             {
-                _logger.LogError(
-                    ex,
-                    "Failed to add a comment to episode {EpisodeId}.",
-                    episodeId);
-
                 TempData["ErrorMessage"] = ex.Message;
             }
 
             return RedirectToAction(
-                nameof(Index),
-                new
-                {
-                    episodeId,
-                    currentUserId = userId
-                });
+                "Details",
+                "Episode",
+                new { id = episodeId });
         }
 
         [HttpGet]
         public async Task<IActionResult> Edit(
             string episodeId,
             string commentId,
-            string currentUserId,
             CancellationToken cancellationToken)
         {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             CommentsModel? comment =
                 await _commentService.GetCommentAsync(
                     episodeId,
@@ -107,12 +104,12 @@ namespace _301379036_chen_lab3.Controllers
                     "The selected user does not own this comment.";
 
                 return RedirectToAction(
-                    nameof(Index),
-                    new
-                    {
-                        episodeId,
-                        currentUserId
-                    });
+                    "Details",
+                    "Episode",
+    new
+    {
+        id = episodeId
+    });
             }
 
             bool editable =
@@ -127,12 +124,12 @@ namespace _301379036_chen_lab3.Controllers
                     "This comment is more than 24 hours old and cannot be edited.";
 
                 return RedirectToAction(
-                    nameof(Index),
-                    new
-                    {
-                        episodeId,
-                        currentUserId
-                    });
+    "Details",
+    "Episode",
+    new
+    {
+        id = episodeId
+    });
             }
 
             ViewBag.CurrentUserId = currentUserId;
@@ -145,15 +142,15 @@ namespace _301379036_chen_lab3.Controllers
         public async Task<IActionResult> Edit(
             string episodeId,
             string commentId,
-            string currentUserId,
             string text,
             CancellationToken cancellationToken)
         {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             CommentUpdateResult result =
                 await _commentService.UpdateCommentAsync(
                     episodeId,
                     commentId,
-                    currentUserId,
+                    currentUserId!,
                     text,
                     cancellationToken);
 
@@ -169,11 +166,11 @@ namespace _301379036_chen_lab3.Controllers
             }
 
             return RedirectToAction(
-                nameof(Index),
+                "Details",
+                "Episode",
                 new
                 {
-                    episodeId,
-                    currentUserId
+                    id = episodeId
                 });
         }
     }

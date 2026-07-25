@@ -5,10 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace _301379036_chen_lab3.Controllers
 {
@@ -16,11 +13,13 @@ namespace _301379036_chen_lab3.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly S3Service _s3Service;
+        private readonly ICommentService _commentService;
 
-        public EpisodeController(ApplicationDbContext context, S3Service s3service)
+        public EpisodeController(ApplicationDbContext context, S3Service s3service, ICommentService commentService)
         {
             _context = context;
             _s3Service = s3service;
+            _commentService = commentService;
         }
 
         // GET: Episode
@@ -58,33 +57,40 @@ namespace _301379036_chen_lab3.Controllers
                 return NotFound();
             }
 
-            return View(episodeModel);
+            var comments = await _commentService.GetCommentsByEpisodeAsync(episodeModel.EpisodeId.ToString());
+            var viewModel = new EpisodeDetailsViewModel
+            {
+                Episode = episodeModel,
+                Comments = comments.ToList(),
+                CurrentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier)
+            };
+            return View(viewModel);
         }
 
         // GET: Episode/Create
         [Authorize(Roles = "Podcaster,Admin")]
         public async Task<IActionResult> Create()
         {
-            
-                var podcasts = await _context.Podcasts.ToListAsync();
 
-                if (podcasts == null)
-                {
-                    throw new Exception("Podcasts is null");
-                }
+            var podcasts = await _context.Podcasts.ToListAsync();
 
-                if (podcasts.Count == 0)
-                {
-                    throw new Exception("No podcasts exist in the database.");
-                }
+            if (podcasts == null)
+            {
+                throw new Exception("Podcasts is null");
+            }
 
-                ViewBag.PodcastID = new SelectList(
-                    podcasts,
-                    nameof(PodcastModel.PodcastID),
-                    nameof(PodcastModel.Title));
+            if (podcasts.Count == 0)
+            {
+                throw new Exception("No podcasts exist in the database.");
+            }
 
-                return View();
-            
+            ViewBag.PodcastID = new SelectList(
+                podcasts,
+                nameof(PodcastModel.PodcastID),
+                nameof(PodcastModel.Title));
+
+            return View();
+
             /*ViewBag.PodcastID = new SelectList(
                 await _context.Podcasts.ToListAsync(), "PodcastID", "Title");
             return View();*/
@@ -100,7 +106,7 @@ namespace _301379036_chen_lab3.Controllers
         {
             if (audioFile == null)
             {
-                ModelState.AddModelError("AudioFileURL","Please upload an audio file.");
+                ModelState.AddModelError("AudioFileURL", "Please upload an audio file.");
             }
             foreach (var error in ModelState)
             {
@@ -124,7 +130,7 @@ namespace _301379036_chen_lab3.Controllers
                 return RedirectToAction(nameof(Index));
             }
             // reload dropdown if validation fails
-            ViewBag.PodcastID = new SelectList(await _context.Podcasts.ToListAsync(),"PodcastID","Title",episodeModel.PodcastID);
+            ViewBag.PodcastID = new SelectList(await _context.Podcasts.ToListAsync(), "PodcastID", "Title", episodeModel.PodcastID);
             return View(episodeModel);
         }
 
@@ -142,7 +148,7 @@ namespace _301379036_chen_lab3.Controllers
             {
                 return NotFound();
             }
-            
+
             ViewBag.PodcastID = new SelectList(
                 await _context.Podcasts.ToListAsync(), "PodcastID", "Title", episodeModel.PodcastID);
 
@@ -155,9 +161,15 @@ namespace _301379036_chen_lab3.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Podcaster,Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("EpisodeId,PodcastID,Title,ReleaseDate,Duration,PlayCount,AudioFileURL,NumberOfViews,Topic,Host")] EpisodeModel episodeModel)
+        public async Task<IActionResult> Edit(int id, EpisodeModel episodeModel, IFormFile? audioFile)
         {
-            if (id != episodeModel.EpisodeId)
+            if (id != (episodeModel.EpisodeId))
+            {
+                return NotFound();
+            }
+
+            var existingEpisode = await _context.Episodes.FirstOrDefaultAsync();
+            if (existingEpisode == null)
             {
                 return NotFound();
             }
@@ -166,7 +178,20 @@ namespace _301379036_chen_lab3.Controllers
             {
                 try
                 {
-                    _context.Update(episodeModel);
+                    existingEpisode.PodcastID = episodeModel.PodcastID;
+                    existingEpisode.Topic = episodeModel.Topic;
+                    existingEpisode.Host = episodeModel.Host;
+                    existingEpisode.Title = episodeModel.Title;
+                    existingEpisode.Duration = episodeModel.Duration;
+                    existingEpisode.ReleaseDate = episodeModel.ReleaseDate;
+                    existingEpisode.EpisodeId = episodeModel.EpisodeId;
+
+                    if (audioFile != null)
+                    {
+                        // Replace the new audio file to S3
+                        existingEpisode.AudioFileURL = await _s3Service.ReplaceFileAsync(audioFile, existingEpisode.AudioFileURL);
+                    }
+
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -195,7 +220,7 @@ namespace _301379036_chen_lab3.Controllers
             }
 
             var episodeModel = await _context.Episodes
-                .FirstOrDefaultAsync(m => m.EpisodeId == id);
+                .FirstOrDefaultAsync(m => m.EpisodeId.Equals(id));
             if (episodeModel == null)
             {
                 return NotFound();

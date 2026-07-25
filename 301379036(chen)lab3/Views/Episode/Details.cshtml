@@ -1,4 +1,4 @@
-﻿@model _301379036_chen_lab3.Models.EpisodeModel
+﻿@model _301379036_chen_lab3.Models.EpisodeDetailsViewModel
 
 @{
     ViewData["Title"] = "Details";
@@ -7,54 +7,128 @@
 <h1>Details</h1>
 
 <div>
-    <h4>EpisodeModel</h4>
+    <h4>Episode Details</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PodcastID)
+            @Html.DisplayNameFor(model => model.Episode.PodcastID)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PodcastID)
+            @Html.DisplayFor(model => model.Episode.PodcastID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Episode.Host)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Episode.Host)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Episode.Topic)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Episode.Topic)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
+            @Html.DisplayNameFor(model => model.Episode.Title)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
+            @Html.DisplayFor(model => model.Episode.Title)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ReleaseDate)
+            @Html.DisplayNameFor(model => model.Episode.ReleaseDate)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ReleaseDate)
+            @Html.DisplayFor(model => model.Episode.ReleaseDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Duration)
+            @Html.DisplayNameFor(model => model.Episode.Duration)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Duration)
+            @Html.DisplayFor(model => model.Episode.Duration)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PlayCount)
+            @Html.DisplayNameFor(model => model.Episode.PlayCount)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PlayCount)
+            @Html.DisplayFor(model => model.Episode.PlayCount)
+        </dd>
+        <dt class="col-sm-2">
+            Audio
+        </dt>
+
+        <dd class="col-sm-10">
+            <audio controls style="width:100%;">
+                <source src="@Model.Episode.AudioFileURL" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AudioFileURL)
+            @Html.DisplayNameFor(model => model.Episode.NumberOfViews)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AudioFileURL)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NumberOfViews)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NumberOfViews)
+            @Html.DisplayFor(model => model.Episode.NumberOfViews)
         </dd>
     </dl>
+    @if (User.Identity!.IsAuthenticated)
+    {
+        <h4>Add Comment</h4>
+
+        <form asp-controller="CommentsDemo"
+              asp-action="Add"
+              method="post">
+
+            @Html.AntiForgeryToken()
+
+            <input type="hidden"
+                   name="episodeId"
+                   value="@Model.Episode.EpisodeId" />
+
+            <input type="hidden"
+                   name="podcastID"
+                   value="@Model.Episode.PodcastID" />
+
+            <div class="mb-3">
+                <textarea name="text"
+                      class="form-control"
+                      rows="4"
+                      placeholder="Write your comment..."></textarea>
+            </div>
+
+            <button type="submit"
+                    class="btn btn-primary">
+                Add Comment
+            </button>
+        </form>
+    }
 </div>
+<h3>Comments</h3>
+@if (Model.Comments.Any())
+{
+    foreach (var comment in Model.Comments)
+    {
+        <div class="border rounded p-2 mb-2">
+            <strong>@comment.UserId</strong><br />
+            @comment.Text
+            <br />
+            <small>@comment.Timestamp.ToLocalTime()</small>
+            @if (comment.UserId == Model.CurrentUserId)
+            {
+                <br />
+                <a asp-controller="CommentsDemo"
+                   asp-action="Edit"
+                   asp-route-episodeId="@comment.EpisodeId"
+                   asp-route-commentId="@comment.CommentId">
+                    Edit
+                </a>
+            }
+        </div>
+    }
+}
+else
+{
+    <p>No comments yet.</p>
+}
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.EpisodeId">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model?.Episode.EpisodeId">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
