@@ -16,5 +16,6 @@ namespace _301379036_chen_lab3.Models
         public int NumberOfViews { get; set; }
         public string Topic { get; set; }
         public string Host { get; set; }
+        public bool IsApproved { get; set; } = false;
     }
 }

@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model _301379036_chen_lab3.Models.UserRoleViewModel
+
+@{
+	ViewData["Title"] = "Edit User";
+}
+
+<h1>Edit User</h1>
+
+<form asp-action="EditUser" method="post">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summer="ModelOnly" class="tect-danger"></div>
+
+    <input asp-for="Id" type="hidden" />
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Username" class="form-label"></label>
+        <input asp-for="Username" class="form-control" />
+        <span asp-validation-for="Username" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Role" class="form-label"></label>
+        <select asp-for="Role" class="form-control">
+            <option value="Listener">Listener</option>
+            <option value="Podcaster">Podcaster</option>
+            <option value="Admin">Admin</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Users" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

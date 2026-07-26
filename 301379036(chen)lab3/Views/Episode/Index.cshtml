@@ -9,36 +9,6 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.PodcastID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ReleaseDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Duration)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PlayCount)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AudioFileURL)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NumberOfViews)
-            </th>
-            <th>
-                <a asp-action="ByPopular">
-                    View Popular Episodes
-                </a>
-            </th>
-        </tr>
         <form asp-action="Index" method="get">
             <div>
                 <label>Topic:</label>
@@ -50,12 +20,50 @@
                 <button type="submit">Search</button>
             </div>
         </form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Podcast
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                <a asp-action="ByDate">
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlayCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AudioFileURL)
+            </th>
+            @if (User.IsInRole("Admin"))
+            {
+            <th>
+                @Html.DisplayNameFor(model => model.IsApproved)
+            </th>    
+            }
+            <th>
+                Actions
+            </th>
+            <th>
+                <a asp-action="ByPopular">
+                    View Popular Episodes
+                </a>
+            </th>
+        </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                    @Html.DisplayFor(modelItem => item.PodcastID)
+                    @item.Podcast?.Title
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
@@ -72,15 +80,33 @@
             <td>
                 @Html.DisplayFor(modelItem => item.AudioFileURL)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumberOfViews)
-            </td>
+            @if (User.IsInRole("Admin"))
+            {
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsApproved)
+                </td>
+			}
             <td>
                 <a asp-action="Edit" asp-route-id="@item.EpisodeId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.EpisodeId">Details</a> |
-                <a asp-action="Watch" asp-route-id="@item.EpisodeId">Watch</a> |
                 <a asp-action="Delete" asp-route-id="@item.EpisodeId">Delete</a>
-            </td>
+                    @if (User.IsInRole("Admin") ){
+                        if (!item.IsApproved)
+                        {
+                            <form asp-controller = "Admin" asp-action="ApproveEpisode" method="post" style="display:inline;">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@item.EpisodeId" />
+                                <button type="submit" class="btn btn-success btn-sm">
+                                    Approve
+                                </button>
+                            </form>
+                        }
+                        else
+                        {
+                            <span class="badge bg-success">Approved</span>
+                        }
+                    }
+                </td>
         </tr>
 }
     </tbody>

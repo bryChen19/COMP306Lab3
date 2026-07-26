@@ -25,7 +25,12 @@ namespace _301379036_chen_lab3.Controllers
         // GET: Episode
         public async Task<IActionResult> Index(string searchTopic, string searchHost)
         {
-            var episodes = _context.Episodes.AsQueryable();
+            var episodes = _context.Episodes.Include(e => e.Podcast).AsQueryable();
+
+            if (!User.IsInRole("Admin"))
+            {
+                episodes = episodes.Where(e => e.IsApproved);
+            }
 
             //search by topic
             if (!string.IsNullOrEmpty(searchTopic))
@@ -55,6 +60,14 @@ namespace _301379036_chen_lab3.Controllers
             if (episodeModel == null)
             {
                 return NotFound();
+            }
+
+            if (!string.IsNullOrEmpty(episodeModel.AudioFileURL))
+            {
+                var uri = new Uri(episodeModel.AudioFileURL);
+
+                episodeModel.AudioFileURL =
+                    _s3Service.GetPreSignedUrl(uri.AbsolutePath.TrimStart('/'));
             }
 
             var comments = await _commentService.GetCommentsByEpisodeAsync(episodeModel.EpisodeId.ToString());
@@ -256,7 +269,13 @@ namespace _301379036_chen_lab3.Controllers
 
         public async Task<IActionResult> ByPopular()
         {
-            var episodes = await _context.Episodes.OrderByDescending(e => e.NumberOfViews).ToListAsync();
+            var episodes = await _context.Episodes.Include(e => e.Podcast).OrderByDescending(e => e.NumberOfViews).ToListAsync();
+
+            return View("Index", episodes);
+        }
+        public async Task<IActionResult> ByDate()
+        {
+            var episodes = await _context.Episodes.Include(e => e.Podcast).OrderBy(e => e.NumberOfViews).ToListAsync();
 
             return View("Index", episodes);
         }

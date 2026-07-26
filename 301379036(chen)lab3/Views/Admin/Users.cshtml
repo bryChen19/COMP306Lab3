@@ -15,6 +15,7 @@
         <tr>
             <th>Email</th>
             <th>Role</th>
+			<th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -24,20 +25,12 @@
                 <td>@user.Email</td>
                 <td>@user.Role</td>
                 <td>
-                    @if (user.Role == "User")
-                    {
-                        <form asp-action="PromoteToAdmin" method="post" style="display:inline;">
-                            <input type="hidden" name="email" value="@user.Email" />
-                            <button type="submit" class="btn btn-primary">Promote to Admin</button>
-                        </form>
-                    }
-                    else if (user.Role == "Admin")
-                    {
-                        <form asp-action="DemoteToUser" method="post" style="display:inline;">
-                            <input type="hidden" name="email" value="@user.Email" />
-                            <button type="submit" class="btn btn-warning">Demote to User</button>
-                        </form>
-                    }
+                    <a asp-action="EditUser" asp-route-id="@user.Id" class="btn btn-primary btn-sm">Edit</a>
+                    <form asp-action="DeleteUser" method="post" style ="display:inline">
+						@Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@user.Id" />
+						<button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Delete this user?');">Delete</button>
+                    </form>
                 </td>
             </tr>
         }

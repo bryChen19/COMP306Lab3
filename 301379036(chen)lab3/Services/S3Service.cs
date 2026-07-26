@@ -36,6 +36,18 @@ namespace _301379036_chen_lab3.Services
                 ?? "comp306-lab3-bryan";
         }
 
+        public string GetPreSignedUrl(string key)
+        {
+            var request = new GetPreSignedUrlRequest
+            {
+                BucketName = _bucketName,
+                Key = key,
+                Expires = DateTime.UtcNow.AddHours(1)
+            };
+
+            return _s3Client.GetPreSignedURL(request);
+        }
+
         //public async Task<string> UploadFileAsync(IFormFile file)
         //{
         //    string fileName = $"{Guid.NewGuid()}_{file.FileName}";

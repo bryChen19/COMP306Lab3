@@ -15,6 +15,13 @@
 	    <a class="btn btn-primary" asp-controller="Episode" asp-action="Index">Browse Episodes</a>
         <a class="btn btn-secondary" asp-controller="Podcast" asp-action="Index">Browse Podcasts</a>
 
+        @if (User.IsInRole("Admin"))
+        {
+            <a class="btn btn-warning" asp-controller="Admin" asp-action="Users">
+                Admin Panel
+            </a>
+        }
+
         <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home")" method="post" style="display:inline;">
             <button type="submit" class="btn btn-danger">
                 Logout
@@ -89,6 +96,29 @@
                 </div>
             </div>
         </div>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Admin
+                        </h5>
+
+                        <p class="card-text">
+                            Manage users and system settings.
+                        </p>
+
+                        <a class="btn btn-warning"
+                           asp-controller="Admin"
+                           asp-action="Users">
+                            Manage Users
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
 
     </div>
 
