@@ -6,8 +6,10 @@ namespace _301379036_chen_lab3.Models
     {
         [Key]
         public int SubscriptionId { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public int PodcastId { get; set; }
         public DateTime SubscribedDate { get; set; }
+
+        public PodcastModel? Podcast { get; set; }
     }
 }

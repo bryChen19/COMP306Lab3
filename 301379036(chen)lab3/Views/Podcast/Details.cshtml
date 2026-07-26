@@ -1,4 +1,9 @@
-﻿@model _301379036_chen_lab3.Models.PodcastModel
+﻿@model _301379036_chen_lab3.Models.PodcastDetailsViewModel
+@Model.Podcast.Title
+@Model.Podcast.Description
+@Model.Podcast.CreatorID
+@Model.Podcast.CreatedDate
+
 
 @{
     ViewData["Title"] = "Details";
@@ -9,34 +14,73 @@
 <div>
     <h4>PodcastModel</h4>
     <hr />
+    @if (User.Identity!.IsAuthenticated)
+    {
+        @if (Model.IsSubscribed)
+        {
+            <form asp-controller="Subscription"
+                  asp-action="Unsubscribe"
+                  method="post">
+
+                @Html.AntiForgeryToken()
+
+                <input type="hidden"
+                       name="podcastId"
+                       value="@Model.Podcast.PodcastID" />
+
+                <button type="submit" class="btn btn-danger">
+                    Unsubscribe
+                </button>
+
+            </form>
+        }
+        else
+        {
+            <form asp-controller="Subscription"
+                  asp-action="Subscribe"
+                  method="post">
+
+                @Html.AntiForgeryToken()
+
+                <input type="hidden"
+                       name="podcastId"
+                       value="@Model.Podcast.PodcastID" />
+
+                <button type="submit" class="btn btn-primary">
+                    Subscribe
+                </button>
+
+            </form>
+        }
+    }
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
+            @Html.DisplayNameFor(model => model.Podcast.Title)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
+            @Html.DisplayFor(model => model.Podcast.Title)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayNameFor(model => model.Podcast.Description)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
+            @Html.DisplayFor(model => model.Podcast.Description)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatorID)
+            @Html.DisplayNameFor(model => model.Podcast.CreatorID)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatorID)
+            @Html.DisplayFor(model => model.Podcast.CreatorID)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedDate)
+            @Html.DisplayNameFor(model => model.Podcast.CreatedDate)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedDate)
+            @Html.DisplayFor(model => model.Podcast.CreatedDate)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.PodcastID">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model?.Podcast.PodcastID">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

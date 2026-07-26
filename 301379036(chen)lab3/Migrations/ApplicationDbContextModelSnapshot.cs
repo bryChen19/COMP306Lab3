@@ -265,7 +265,7 @@ namespace _301379036_chen_lab3.Migrations
 
                     b.HasKey("EpisodeId");
 
-                    b.ToTable("Episodes");
+                    b.ToTable("Episodes", (string)null);
                 });
 
             modelBuilder.Entity("_301379036_chen_lab3.Models.PodcastModel", b =>
@@ -292,7 +292,7 @@ namespace _301379036_chen_lab3.Migrations
 
                     b.HasKey("PodcastID");
 
-                    b.ToTable("Podcasts");
+                    b.ToTable("Podcasts", (string)null);
                 });
 
             modelBuilder.Entity("_301379036_chen_lab3.Models.SubscriptionModel", b =>
@@ -314,7 +314,7 @@ namespace _301379036_chen_lab3.Migrations
 
                     b.HasKey("SubscriptionId");
 
-                    b.ToTable("Subscriptions");
+                    b.ToTable("Subscriptions", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

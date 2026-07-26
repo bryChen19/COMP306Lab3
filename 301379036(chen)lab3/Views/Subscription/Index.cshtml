@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.UserId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PodcastId)
+                Podcast
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.SubscribedDate)
@@ -31,14 +31,13 @@
                 @Html.DisplayFor(modelItem => item.UserId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PodcastId)
+                    @item.Podcast?.Title
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SubscribedDate)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.SubscriptionId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SubscriptionId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.SubscriptionId">Delete</a>
             </td>
         </tr>

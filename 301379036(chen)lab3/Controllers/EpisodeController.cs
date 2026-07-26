@@ -75,8 +75,8 @@ namespace _301379036_chen_lab3.Controllers
             {
                 Episode = episodeModel,
                 Comments = comments.ToList(),
-                CurrentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier)
-            };
+
+        };
             return View(viewModel);
         }
 

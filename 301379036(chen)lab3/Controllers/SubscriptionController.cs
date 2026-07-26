@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using _301379036_chen_lab3.Data;
+using _301379036_chen_lab3.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using _301379036_chen_lab3.Data;
-using _301379036_chen_lab3.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace _301379036_chen_lab3.Controllers
 {
@@ -19,10 +21,76 @@ namespace _301379036_chen_lab3.Controllers
             _context = context;
         }
 
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Subscribe(int podcastId)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (userId == null)
+                return Unauthorized();
+
+
+            var exists = await _context.Subscriptions
+                .AnyAsync(s =>
+                    s.UserId == userId &&
+                    s.PodcastId == podcastId);
+
+
+            if (!exists)
+            {
+                var subscription = new SubscriptionModel
+                {
+                    UserId = userId,
+                    PodcastId = podcastId,
+                    SubscribedDate = DateTime.Now
+                };
+
+                _context.Subscriptions.Add(subscription);
+                await _context.SaveChangesAsync();
+            }
+
+
+            return RedirectToAction(
+                "Details",
+                "Podcast",
+                new { id = podcastId });
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Unsubscribe(int podcastId)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var subscription = await _context.Subscriptions
+                .FirstOrDefaultAsync(s =>
+                    s.UserId == userId &&
+                    s.PodcastId == podcastId);
+
+            if (subscription != null)
+            {
+                _context.Subscriptions.Remove(subscription);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(
+                "Details",
+                "Podcast",
+                new { id = podcastId });
+        }
+
         // GET: Subscription
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Subscriptions.ToListAsync());
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var subscriptions = await _context.Subscriptions
+                .Include(s => s.Podcast)
+                .Where(s => s.UserId == userId)
+                .ToListAsync();
+
+            return View(subscriptions);
         }
 
         // GET: Subscription/Details/5
@@ -32,13 +100,30 @@ namespace _301379036_chen_lab3.Controllers
             {
                 return NotFound();
             }
-
+            var podcast = await _context.Podcasts
+        .FirstOrDefaultAsync(p => p.PodcastID == id);
             var subscriptionModel = await _context.Subscriptions
                 .FirstOrDefaultAsync(m => m.SubscriptionId == id);
             if (subscriptionModel == null)
             {
                 return NotFound();
             }
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            bool isSubscribed = false;
+            if (userId != null)
+            {
+                isSubscribed = await _context.Subscriptions
+                    .AnyAsync(s =>
+                        s.UserId == userId &&
+                        s.PodcastId == podcast.PodcastID);
+            }
+
+
+            var viewModel = new PodcastDetailsViewModel
+            {
+                Podcast = podcast,
+                IsSubscribed = isSubscribed
+            };
 
             return View(subscriptionModel);
         }
@@ -59,6 +144,7 @@ namespace _301379036_chen_lab3.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(subscriptionModel);
+
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

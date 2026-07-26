@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using _301379036_chen_lab3.Data;
+using _301379036_chen_lab3.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using _301379036_chen_lab3.Data;
-using _301379036_chen_lab3.Models;
-using Microsoft.AspNetCore.Authorization;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace _301379036_chen_lab3.Controllers
 {
@@ -33,15 +34,27 @@ namespace _301379036_chen_lab3.Controllers
             {
                 return NotFound();
             }
-
             var podcastModel = await _context.Podcasts
-                .FirstOrDefaultAsync(m => m.PodcastID == id);
-            if (podcastModel == null)
+        .FirstOrDefaultAsync(m => m.PodcastID == id);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            bool isSubscribed = false;
+
+            if (userId != null)
             {
-                return NotFound();
+                isSubscribed = await _context.Subscriptions
+                    .AnyAsync(s =>
+                        s.UserId == userId &&
+                        s.PodcastId == podcastModel.PodcastID);
             }
 
-            return View(podcastModel);
+
+            var viewModel = new PodcastDetailsViewModel
+            {
+                Podcast = podcastModel,
+                IsSubscribed = isSubscribed
+            };
+
+            return View(viewModel);
         }
 
         // GET: Podcast/Create

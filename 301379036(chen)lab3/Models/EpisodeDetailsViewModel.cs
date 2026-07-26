@@ -6,5 +6,6 @@
         public List<CommentsModel> Comments { get; set; } = new List<CommentsModel>();
         public string? CurrentUserId { get; set; }
         public string? NewComment { get; set; }
+        public bool IsSubscribed { get; set; }
     }
 }
