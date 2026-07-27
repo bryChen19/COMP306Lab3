@@ -1,0 +1,12 @@
+{
+  "region": "ca-central-1",
+  "configuration": "Debug",
+  "framework": "net8.0",
+  "self-contained": true,
+  "application": "COMP306Lab3",
+  "environment": "COMP306Lab3-env",
+  "enable-xray": false,
+  "enhanced-health-type": "basic",
+  "additional-options": "",
+  "proxy-server": "nginx"
+}

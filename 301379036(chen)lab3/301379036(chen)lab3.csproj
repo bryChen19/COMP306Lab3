@@ -5,9 +5,11 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>_301379036_chen_lab3</RootNamespace>
+    <AssemblyName>Lab3_301379036</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Amazon.Extensions.Configuration.SystemsManager" Version="7.1.0" />
     <PackageReference Include="AWSSDK.DynamoDBv2" Version="4.0.101.2" />
     <PackageReference Include="awssdk.extensions.netcore.setup" Version="4.0.100.6" />
     <PackageReference Include="awssdk.s3" Version="4.0.101.1" />
